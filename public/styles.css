@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  background-color: #eee;
+  color: #333;
+}
+
+
+li {
+  float: left;
+}
+
+li a, p{
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.form-group{
+  text-align: left;
+  margin-left: 40%;
+}
+
+.err{
+  text-align: center;
+  margin-left: 40%;
+}
+
+button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+  width: auto;
+  margin: auto;
+  margin-top: 30px;
+}

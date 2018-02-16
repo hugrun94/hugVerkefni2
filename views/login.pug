@@ -1,0 +1,15 @@
+extends layout
+
+block content
+        form(method='POST' action='/login')
+          div.form-group
+            label(for='nafn') Notendanafn:
+            input(type = 'text', name='username', required='true')
+
+          div.form-group
+            label(for='password') Lykilorð:
+            input(type = 'password', name='password', required='true')
+
+          div.form-group
+            button(type='submit') Skrá inn
+

@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 
+
+        // form
+        if errors
+          for error in errors
+            p= error
+        form(method='POST' action='/post')
+          div.form-group
+            label(for='name') Nafn:
+            input#name.form-control(type='text', style='margin-left: 31px;', placeholder='', name='name', value=information.name)
+          div.form-group
+            label(for='email') Netfang:
+            input#email.form-control(type='email', style='margin-left: 11px;', placeholder='', name='email', value=information.email)
+          div.form-group
+            label(for='kennitala') Kennitala:
+            input#name.form-control(type='text', placeholder='', name='ssn', value=information.ssn)
+          div.form-group
+            label(for='fjoldi') Fjöldi:
+            input#name.form-control(type='number', style='margin-left: 24px;', placeholder='', name='amount', value=information.amout)
+          button.btn.btn-primary(type='submit') Senda
+          
+          block footer
+            footer
+              ul
+                li
+                  a(href="login") Innskráning
+
+
+
+
